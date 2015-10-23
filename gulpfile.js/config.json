@@ -1,0 +1,62 @@
+{
+  "root": {
+    "src": "./src",
+    "dest": "./dest",
+    "data" : "./data",
+    "route" : "./routes"
+  },
+  "express":{
+    "port" : 8081
+  },
+  "tasks": {
+    "browserSync":{
+      "proxy" : "http://127.0.0.1:8081/__main__.html",
+      "port":8082,
+      "index" : "__main__.html"
+    },
+    "js": {
+      "src": "js",
+      "dest": "js",
+      "extractSharedJs": true,
+      "sharedJsName":"common",
+      "extensions": ["js"]
+    },
+    "sprite":{
+      "name":"sprite.png"
+    },
+    "css": {
+      "src": "css",
+      "dest": "css",
+      "sass": {},
+      "extensions": ["scss"]
+    },
+
+    "jade" : {
+        "src" : "page",
+        "dest" : "page",
+        "jade" : {
+         "pretty": true
+         },
+        "extensions":["jade"]
+    },
+
+    "images": {
+      "src": "img",
+      "dest": "img",
+      "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+    "fonts": {
+      "src": "fonts",
+      "dest": "fonts",
+      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
+    },
+
+    "iconFont": {
+      "src": "icons",
+      "dest": "fonts",
+      "sassDest": "generated",
+      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+/* reset */
+html, body, div, h1, h2, h3, h4, h5, h6, p, 
+img, dl, dt, dd, ol, ul, li,form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+h1,h2,h3,h4,h5,h6 { font-weight:normal;}
+table { border-collapse:collapse; border-spacing:0; }
+img { border:0;}
+ol, ul { list-style: none; }
+i,b,em,strong { font-style:normal; text-decoration:none; font-weight: normal;}
+body { font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","STHeitiSC-Light","Microsoft YaHei","微软雅黑",Arial,sans-serif;; }
+
+a, img {
+    -webkit-touch-callout: none;text-decoration:none;
+}
+
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans-Bold-webfont.eot') format('eot');/*IE*/
+	src:url('../fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype');/*non-IE*/
+}
