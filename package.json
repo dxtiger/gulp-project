@@ -6,10 +6,10 @@
     "node": "0.12.2",
     "npm": "2.7.4"
   },
-  "homepage": "http://code.viget.com/gulp-starter/",
+  "homepage": "http://tigers.cc/gulp-project/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/vigetlabs/gulp-starter.git"
+    "url": "git://github.com/dxtiger/gulp-project.git"
   },
   "scripts": {
     "release": "gulp release",
