@@ -16,6 +16,9 @@ a, img {
     -webkit-touch-callout: none;text-decoration:none;
 }
 
+html{
+	-webkit-text-size-adjust: 100%; /* 防止页面resize之后，字体未重新渲染的bug */
+}
 
 @font-face {
 	font-family: 'OpenSans';
