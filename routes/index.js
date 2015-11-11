@@ -1,5 +1,6 @@
 var fs = require('fs');
 var path = require('path');
+var config = require('../gulpfile.js/config.json');
 
 
 function test(req,res){
@@ -14,4 +15,19 @@ function test(req,res){
 
 module.exports = function(app) {
 	app.get('/test',test);
+
+	app.get('*/*',function(req,res){
+		var _path = path.join(__dirname , '../', config.root.dest ,req.path);
+		if(/\.ico/.test(req.path)){
+			res.send('');
+			return
+		}
+		var files = fs.readdirSync(_path);
+		var str = '<ul>';
+		files.forEach(function(item){
+			str += '<li><a href="'+ path.join( req.path  , item) +'">'+ item +'</a></li>'
+		})
+		str += '</ul>';
+		res.send(str);
+	})
 }

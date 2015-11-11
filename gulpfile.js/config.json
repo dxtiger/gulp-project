@@ -10,9 +10,8 @@
   },
   "tasks": {
     "browserSync":{
-      "proxy" : "http://127.0.0.1:8081/__main__.html",
-      "port":8082,
-      "index" : "__main__.html"
+      "proxy" : "http://127.0.0.1:8081",
+      "port":8082
     },
     "js": {
       "src": "js",

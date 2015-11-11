@@ -18,7 +18,7 @@ gulp.task('clean', function (cb) {
   // Don't touch node_modules or source files!
   files.push('!node_modules/**/*')
   files.push('!' + path.join(config.root.src, '/**/*'))
-
+  
   del(files).then(function (paths) {
     // console.log(paths)
     cb()

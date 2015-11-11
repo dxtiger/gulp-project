@@ -1,4 +1,3 @@
-
 var domready = require('./model/domready');
 var test = require('./model/test');
 
